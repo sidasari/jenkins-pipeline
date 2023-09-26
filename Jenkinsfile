@@ -10,7 +10,7 @@ pipeline {
     }
     stages {
         stage("Tools initialization") {
-            agent { label 'DEV' }
+            
             steps {
                
                 sh "java -version"
