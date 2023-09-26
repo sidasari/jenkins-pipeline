@@ -13,6 +13,7 @@ pipeline {
             
             steps { 
 		git 'https://github.com/sidasari/jenkins-pipeline'
+		 sh 'mvn --version'
                 sh 'mvn clean install'
                 // exit 1
             }
