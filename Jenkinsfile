@@ -8,9 +8,11 @@ pipeline {
         PROJECT = "WELCOME TO DEVOPS B28 BATCH - Jenkins Class"
     }
     stages {
+	    
         stage('mvn clean build') {
             
             steps { 
+		git 'https://github.com/sidasari/jenkins-pipeline'
                 sh 'mvn clean install'
                 // exit 1
             }
